@@ -1,0 +1,8 @@
+create-pages:
+  stage: deploy
+  script:
+    - mkdir public
+    - cp -r . public/
+    - rm -rf public/.git
+  pages:
+    publish: public
