@@ -1,6 +1,6 @@
 (function(){"use strict";
 /* Edit this one line: your LinkedIn profile URL */
-var LINKEDIN="https://www.linkedin.com/in/YOUR-PROFILE";
+var LINKEDIN="https://www.linkedin.com/in/divusathya";
 var $=function(s){return document.querySelector(s)};
 document.querySelectorAll("[data-li]").forEach(function(a){a.href=LINKEDIN;a.target="_blank";a.rel="noopener noreferrer"});
 $("#yr").textContent=new Date().getFullYear();
