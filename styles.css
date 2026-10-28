@@ -354,3 +354,27 @@ a.ci:hover h3{color:#1b3a8a}
 @keyframes ovf{from{overflow:hidden}to{overflow:visible}}
 .ai.on .b>div{animation:ovf .9s steps(1,end) forwards}
 .lgo:first-of-type:after{left:0;translate:0 4px}.lgo:first-of-type:hover:after{translate:0 0}
+
+/* Component libraries (Work section) */
+.cl-block{margin-top:64px}.cl-h{font-size:28px;margin-bottom:10px}.cl-block .sub{margin-bottom:26px}
+.cl-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.cl-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;transition:.3s}.cl-card:hover{border-color:var(--ac);transform:translateY(-4px)}
+.cl-card small{color:var(--mu)}.cl-card h4{font-size:22px;margin:8px 0 10px}.cl-card p{color:var(--mu);margin-bottom:20px}
+.cl-act{display:flex;flex-wrap:wrap;gap:10px}.cl-act button{cursor:pointer;font-family:inherit}
+.cl-win{position:relative;width:100%;max-width:1280px;height:92vh;display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;animation:pop .3s}
+.cl-bar{display:flex;align-items:center;gap:14px;padding:14px 64px 14px 22px;border-bottom:1px solid var(--line);background:var(--bg2)}.cl-bar h3{flex:1;font-size:20px}
+.cl-bar .x{top:50%;transform:translateY(-50%)}
+.cl-win iframe{flex:1;width:100%;border:0;background:#fff}
+/* Creative Playground (footer) */
+.cp .sub{max-width:720px;margin-bottom:28px}
+.cp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cp-card{display:flex;flex-direction:column;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;transition:.3s}.cp-card:hover{border-color:var(--ac);transform:translateY(-4px)}
+.cp-card small{color:var(--mu)}.cp-card h4{font-size:17px;margin-bottom:14px;flex:1}.cp-card .btn{align-self:flex-start}
+@media(max-width:1000px){.cp-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.cl-grid,.cp-grid{grid-template-columns:1fr}.cl-win{height:94vh}.cl-bar{flex-wrap:wrap;padding-right:56px}}
+
+.cp-h{font-size:22px;margin:30px 0 16px}.cp-sad{grid-template-columns:repeat(3,1fr)}
+.cp-card{text-align:left;color:inherit;font:inherit;cursor:pointer}.cp-img img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;border-radius:12px;margin-bottom:10px}
+@media(max-width:1000px){.cp-sad{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){.cp-sad{grid-template-columns:1fr}}
+
+.cp-card{background:rgba(255,255,255,.1);backdrop-filter:blur(6px)}
